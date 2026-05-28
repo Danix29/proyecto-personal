@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fill in the Gaps Exercise</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Estilos específicos para el ejercicio de Fill in the Gaps */
+    .exercise-container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+    }
+    h2 {
+      font-size: 45px;
+      margin-bottom: 20px;
+      color: #FFA500;
+    }
+    .exercise-text {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #FFA500;
+    }
+    audio {
+      display: block;
+      margin: 20px auto;
+    }
+    .fill-gap {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    .fill-gap p {
+      font-size: 22px;
+      margin-bottom: 5px;
+      color: #FFA500;
+    }
+    .fill-gap input {
+      font-size: 20px;
+      padding: 5px;
+      width: 250px;
+    }
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .result {
+      margin-top: 20px;
+      font-size: 22px;
+      text-align: center;
+      color: #FFA500;
+    }
+  </style>
+</head>
+<body>
+  <!-- Cabecera -->
+  <header class="header">
+    <div class="menu container">
+      <a href="index.html" class="logo">SBI</a>
+      <input type="checkbox" id="menu" />
+      <label for="menu">
+        <img src="images/menu.png" class="menu-icono" alt="">
+      </label>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Main</a></li>
+          <li><a href="exercises.html">Exercises</a></li>
+          <li><a href="spreadsheets.html">Spreadsheets</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-content container">
+      <h1>Fill in the Gaps Exercise</h1>
+      <p>Complete the sentences using the words provided. Listen to the audio tracks before answering.</p>
+      <a href="Information.html" class="btn-1">Information</a>
+    </div>
+  </header>
+  
+  <!-- Ejercicio Fill in the Gaps con audios -->
+  <main class="Servicios">
+    <div class="exercise-container">
+      <h2>Fill in the Gaps</h2>
+      <p class="exercise-text">Listen to the audio tracks:</p>
+      <p class="exercise-text">Audio Track 1:</p>
+      <audio controls>
+        <source src="audio/A1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <p class="exercise-text">Audio Track 2:</p>
+      <audio controls>
+        <source src="audio/A3.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <p class="exercise-text">Audio Track 3:</p>
+      <audio controls>
+        <source src="audio/A2.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <p class="exercise-text">
+        Complete the following sentences with the correct words from the box below:
+      </p>
+      <p class="exercise-text">
+        <strong>Words to use:</strong> appealing, well-established, frustrating, affordable, privacy, efficient, tiny minority, live for the moment, valuable, standard
+      </p>
+      <form id="fillGapsForm">
+        <div class="fill-gap">
+          <p>1. Inés and Blanca discussed how the _________ of elderly people is at risk because they often live alone and feel isolated.</p>
+          <input type="text" id="gap1" placeholder="your answer">
+        </div>
+        <div class="fill-gap">
+          <p>2. Many young people find it _________ that housing is so expensive, making it nearly impossible to own a home.</p>
+          <input type="text" id="gap2" placeholder="your answer">
+        </div>
+        <div class="fill-gap">
+          <p>3. Sofía believes that people should not just _________, but instead think about how their decisions affect their future.</p>
+          <input type="text" id="gap3" placeholder="your answer">
+        </div>
+        <div class="fill-gap">
+          <p>4. Some believe shared housing could be a more _________ and practical solution to the current housing crisis.</p>
+          <input type="text" id="gap4" placeholder="your answer">
+        </div>
+        <div class="fill-gap">
+          <p>5. While owning a house is still considered the _________ way of achieving stability, not everyone can afford it.</p>
+          <input type="text" id="gap5" placeholder="your answer">
+        </div>
+        <div class="fill-gap">
+          <p>6. Social media makes people feel connected, but it also threatens _________ since personal information is shared so easily.</p>
+          <input type="text" id="gap6" placeholder="your answer">
+        </div>
+        <div class="fill-gap">
+          <p>7. Luxury apartments in the city may be _________ to many people, but they are out of reach for most due to high prices.</p>
+          <input type="text" id="gap7" placeholder="your answer">
+        </div>
+        <div class="fill-gap">
+          <p>8. A _________ of retired people can afford a comfortable lifestyle, while the majority face financial difficulties.</p>
+          <input type="text" id="gap8" placeholder="your answer">
+        </div>
+        <div class="fill-gap">
+          <p>9. In some countries, multi-generational living is a _________ tradition that benefits both the elderly and younger generations.</p>
+          <input type="text" id="gap9" placeholder="your answer">
+        </div>
+        <div class="fill-gap">
+          <p>10. It’s important to find _________ solutions that allow more people to have access to housing, rather than focusing only on luxury developments.</p>
+          <input type="text" id="gap10" placeholder="your answer">
+        </div>
+      </form>
+      <button onclick="checkFillGaps()">Check Answers</button>
+      <div id="fillGapsResult" class="result"></div>
+    </div>
+  </main>
+  
+  <footer class="footer">
+    <div class="footer-content container">
+        <div class="link">
+            <h3>Index</h3>
+            <ul>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="index.html">SBI</a></li>
+                <li><a href="index.html">Main</a></li>
+            </ul>
+        </div>
+        <div class="link">
+            <h3>Exercises</h3>
+            <ul>
+                <li><a href="exercises.html">Exercises</a></li>
+                <li><a href="vocabulary.html">Vocabulary</a></li>
+                <li><a href="grammar.html">Grammar</a></li>
+                <li><a href="listening.html">Listening</a></li>
+                <li><a href="reading.html">Reading</a></li>
+                <li><a href="writing.html">Writing</a></li>
+            </ul>
+        </div>
+        <div class="link">
+            <h3>Information</h3>
+            <ul>
+                <li><a href="Information.html">Information</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Index</a></li>
+            </ul>
+        </div>
+        <div class="link">
+            <h3>Contact</h3>
+            <ul>
+                <li><a href="mailto:sofia.melero@humanitastorrejon.onmicrosoft.com">Email</a></li>
+                <li><a href="contact.html">Phone</a></li>
+                <li><a href="https://www.google.es/maps/place/Humanitas+Bilingual+School+Torrej%C3%B3n/">Address</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+  
+  <script>
+    function checkFillGaps() {
+      var answers = {
+        gap1: "privacy",
+        gap2: "frustrating",
+        gap3: "live for the moment",
+        gap4: "efficient",
+        gap5: "standard",
+        gap6: "privacy",
+        gap7: "appealing",
+        gap8: "tiny minority",
+        gap9: "well-established",
+        gap10: "affordable"
+      };
+      
+      var correctCount = 0;
+      var resultHTML = "";
+      for (var key in answers) {
+        var userAnswer = document.getElementById(key).value.trim().toLowerCase();
+        if (userAnswer === answers[key]) {
+          resultHTML += "<p>" + key + ": ✓</p>";
+          correctCount++;
+        } else {
+          resultHTML += "<p style='color: red;'>" + key + ": ✗ (Correct: " + answers[key] + ")</p>";
+        }
+      }
+      resultHTML = "<h3>You got " + correctCount + " out of 10 correct.</h3>" + resultHTML;
+      document.getElementById("fillGapsResult").innerHTML = resultHTML;
+    }
+  </script>
+</body>
+</html>

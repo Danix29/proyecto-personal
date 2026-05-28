@@ -1,0 +1,745 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    /* Clases para diferentes pesos de Poppins */
+    .poppins-thin {
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+    }
+      
+    .poppins-extralight {
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+    }
+      
+    .poppins-light {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+      
+    .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+      
+    .poppins-medium {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+      
+    .poppins-semibold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+      
+    .poppins-bold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+      
+    .poppins-extrabold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+    }
+      
+    .poppins-black {
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    }
+      
+    .poppins-thin-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: italic;
+    }
+      
+    .poppins-extralight-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        font-style: italic;
+    }
+      
+    .poppins-light-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: italic;
+    }
+      
+    .poppins-regular-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+    }
+      
+    .poppins-medium-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: italic;
+    }
+      
+    .poppins-semibold-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: italic;
+    }
+      
+    .poppins-bold-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+    }
+      
+    .poppins-extrabold-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-style: italic;
+    }
+      
+    .poppins-black-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+        font-style: italic;
+    }
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(41, 41, 41, 0.7)),
+        url(images/bg.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;  
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color: rgb(184, 166, 110);
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: antiquewhite;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover{
+    color: rgb(219, 179, 148);
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-content{
+    text-align: center;
+}
+
+.header-content h1{
+    font-size: 75px;
+    line-height: 80px;
+    color: rgb(184, 166, 110);
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.header-content p{
+    font-size: 16px;
+    color: beige;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 11px 35px;
+    color: rgb(201, 97, 5);
+    text-transform: uppercase;
+}
+
+.btn-1:hover{
+    color: rgb(250, 99, 94);
+}
+
+.coffee{
+    padding: 100px 0;
+    background-color: blanchedalmond;
+    position: relative;
+}
+
+.coffee-content{
+    text-align: center;
+}
+
+.coffee-content h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: brown;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+.txt-p{
+    font-size: 16px;
+    color: rgb(81, 81, 39);
+    padding: 0 250px;
+    margin-bottom: 35px;
+}
+
+.coffee-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.coffee-1{
+    padding: 0 25px;
+}
+
+.coffee-1 img{
+    width: 200px;
+}
+
+.coffee-1 h3{
+    color: #323232;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.coffee-1 h6{
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+.coffee-1 h6 a{
+    color: rgb(201, 97, 5);
+}
+
+.coffee-1 h6 a:hover{
+    color: rgb(250, 99, 94);
+}
+
+.Servicios {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(41, 41, 41, 0.7)),
+        url(images/bg2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+
+.services-content{
+    text-align: center;
+}
+
+.services-content h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: #f9fafc;
+    margin-bottom: 50px;
+}
+
+.services-content p{
+    text-align: center;
+    font-size: 16px;
+    color: #c5c5c5;
+    margin-bottom: 50px;
+    padding: 0 100px;
+}
+
+.services-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.services-1{
+    flex: 1 1 calc(20% - 20px);  /* Cada item ocupará aproximadamente el 20% del ancho, con un pequeño margen */
+    max-width: calc(20% - 20px);
+    padding: 0 10px;             /* Reduce el padding para evitar excesos */
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.services-1 img{
+    width: 25px;
+    margin-bottom: 15px;
+}
+
+.services-1 h3{
+    color: #EAccb3;
+    font-size: 18px;
+}
+
+.services-1 a{
+    margin-top: 20px;
+    color: bisque;
+}
+
+.general{
+    display: flex;
+}
+
+.general-1{
+    width: 50%;
+    padding: 100px 250px 100px 250px;
+    background-color: azure;
+}
+
+.general-2{
+    background-image: url(images/coffe-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.general-3{
+    background-image: url(images/coffee-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: darkblue;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 16px;
+    color: #323232;
+    margin: 20px 0 45px 0;
+}
+
+.blog{
+    padding: 100px 0;
+    text-align: center;
+}
+
+.blog-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-1{
+    padding: 15px 15px;
+}
+
+.blog-1 img{
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.blog-1 h3{
+    font-size: 25px;
+    color: #323232;
+}
+
+/* --- Corrección de las cajas para el ejercicio --- */
+.cajas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;       /* Centra horizontalmente el contenido */
+    font-size: 20px;
+    text-align: center;
+    color: antiquewhite;
+    margin: 0 auto;            /* Centra el contenedor dentro de su padre */
+    gap: 20px;                 /* Espacio entre elementos */
+}
+
+.box {
+    width: 200px;
+    min-height: 50px;
+    border: 2px solid rgba(0, 0, 0, 0.24);  /* Borde con transparencia */
+    padding: 10px;
+    margin: 10px auto;         /* Centra cada caja individualmente */
+    background-color: #f1f1f100;
+}
+
+/* Footer */
+.footer{
+    padding: 100px 0;
+    background-color: #323232;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3{
+    font-size: 18px;
+    color: #f9fafc;
+    margin-bottom: 18px;
+}
+
+.link a{
+    font-size: 16px;
+    color: #c5c5c5;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.link a:hover{
+    color: #c61313;
+}
+
+/* Media Queries */
+@media(max-width:991px){
+    .menu{
+        padding: 30px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #323232;
+        display: none;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    .header{
+        min-height: 0vh;
+    }
+    .header-content{
+        padding: 100px 30px;
+    }
+    .header-content p{
+        padding: 0;
+    }
+    .coffee{
+        padding: 30px;
+    }
+    .coffee-content h2{
+        padding: 0;
+    }
+    .txt-p{
+        padding: 0;
+    }
+    .coffee-group{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .Servicios{
+        padding: 30px;
+    }
+    .services-content p{
+        padding: 0;
+    }
+    .services-group{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .services-1{
+        margin-bottom: 25px;
+    }
+    .general{
+        flex-direction: column;
+    }
+    .general-1{
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+    .general-2, .general-3{
+        display: none;
+    }
+    .blog{
+        padding: 30px;
+    }
+    .blog-content{
+        flex-direction: column;
+    }
+    .blog-1{
+        padding: 0;
+    }
+    .footer{
+        padding: 30px;
+    }
+    .footer-content{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+/* =============================================
+   SBI — Interactive UI Enhancements
+   Pairs with interactions.js
+   ============================================= */
+
+/* ── Scroll Progress Bar ─────────────────────── */
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: linear-gradient(90deg, rgb(201, 97, 5), rgb(184, 166, 110));
+    z-index: 10000;
+    transition: width 0.1s linear;
+    pointer-events: none;
+}
+
+/* ── Custom Cursor Glow ──────────────────────── */
+#cursor-glow {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(201, 97, 5, 0.38) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s ease, height 0.2s ease, background 0.2s ease;
+    will-change: left, top;
+}
+
+#cursor-glow.cursor-big {
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle, rgba(201, 97, 5, 0.22) 0%, transparent 70%);
+}
+
+/* ── Back-to-Top Button ──────────────────────── */
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgb(201, 97, 5);
+    color: #fff;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(12px);
+    transition: opacity 0.3s ease, transform 0.3s ease, background 0.2s ease, box-shadow 0.2s ease;
+    z-index: 9000;
+    box-shadow: 0 4px 15px rgba(201, 97, 5, 0.4);
+}
+
+#back-to-top.visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+#back-to-top:hover {
+    background: rgb(250, 99, 94);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(250, 99, 94, 0.5);
+}
+
+/* ── Scroll Reveal — sections ────────────────── */
+/* Only hide when JS has loaded (.js class added by interactions.js).
+   Without JS, sections stay fully visible (progressive enhancement). */
+.js .reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.js .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Cards inside a reveal section start hidden and stagger in */
+.js .reveal .coffee-1,
+.js .reveal .blog-1 {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.js .reveal .coffee-1.visible,
+.js .reveal .blog-1.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.js .reveal .services-1 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease, background 0.3s ease,
+                border-color 0.3s ease;
+}
+
+.js .reveal .services-1.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ── Enhanced Coffee / Exercise Cards ───────── */
+.coffee-1 {
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+    will-change: transform;
+}
+
+.coffee-1:hover {
+    box-shadow: 0 12px 35px rgba(201, 97, 5, 0.18);
+}
+
+.coffee-1 img {
+    transition: transform 0.4s ease;
+}
+
+.coffee-1:hover img {
+    transform: scale(1.07);
+}
+
+/* ── Services Cards ──────────────────────────── */
+.services-1 {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.services-1:hover {
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(184, 166, 110, 0.45);
+    transform: translateY(-5px);
+}
+
+/* ── Blog / Team Cards ───────────────────────── */
+.blog-1 {
+    overflow: hidden;
+    border-radius: 16px;
+    cursor: pointer;
+    will-change: transform;
+    transition: box-shadow 0.3s ease;
+}
+
+.blog-1:hover {
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.14);
+}
+
+.blog-1 img {
+    transition: transform 0.4s ease;
+}
+
+.blog-1:hover img {
+    transform: scale(1.06);
+}
+
+/* ── Improved CTA Button ─────────────────────── */
+.btn-1 {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid rgb(201, 97, 5);
+    border-radius: 30px;
+    transition: background 0.3s ease, color 0.3s ease,
+                transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn-1:hover {
+    background: rgb(201, 97, 5);
+    color: #fff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(201, 97, 5, 0.38);
+}
+
+/* Ripple effect on click */
+.btn-1 .ripple {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.55);
+    transform: scale(0);
+    animation: ripple-anim 0.6s linear;
+    pointer-events: none;
+}
+
+@keyframes ripple-anim {
+    to {
+        transform: scale(130);
+        opacity: 0;
+    }
+}
+
+/* ── Nav Active Highlight ────────────────────── */
+.navbar a.nav-active {
+    color: rgb(184, 166, 110) !important;
+    border-bottom: 2px solid rgb(184, 166, 110);
+}

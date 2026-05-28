@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Writing Exercise - Order Paragraphs</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Estilos específicos para el ejercicio de Writing: Order the Paragraphs */
+    .order-container {
+      max-width: 800px;
+      margin: 50px auto;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .order-container h2 {
+      font-size: 45px;
+      margin-bottom: 20px;
+      color: #870b0b;
+    }
+
+    .instruction {
+      font-size: 20px;
+      margin-bottom: 30px;
+      color: #d59c16;
+    }
+
+    .paragraphs {
+      text-align: left;
+      margin-bottom: 30px;
+      font-size: 18px;
+      color: #333;
+      border: 1px solid #d59c16;
+      padding: 15px;
+      border-radius: 4px;
+    }
+
+    .paragraph {
+      margin-bottom: 15px;
+    }
+
+    .paragraph strong {
+      color: #d59c16;
+    }
+
+    .order-input {
+      font-size: 18px;
+      padding: 10px;
+      width: 60%;
+      border: 1px solid #d59c16;
+      border-radius: 4px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      background-color: #d59c16;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+    }
+
+    .result {
+      margin-top: 20px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="menu container">
+      <a href="index.html" class="logo">SBI</a>
+      <input type="checkbox" id="menu" />
+      <label for="menu">
+        <img src="images/menu.png" class="menu-icono" alt="">
+      </label>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Main</a></li>
+          <li><a href="exercises.html">Exercises</a></li>
+          <li><a href="spreadsheets.html">Spreadsheets</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-content container">
+      <h1>Writing Exercise 1: Narrative Architect</h1>
+      <p>
+        Begin your journey in crafting impactful English compositions! This section immerses you in
+        strategic exercises to master storytelling techniques, structure ideas effectively, and
+        develop your authentic voice through organized drafting and revision cycles.
+      </p>
+      <a href="Information.html" class="btn-1">Information</a>
+    </div>
+  </header>
+
+  <section class="coffee">
+    <div class="coffee-content container">
+      <h2>Craft, Refine, and Elevate Your Written Expression</h2>
+      <p class="txt-p"> Explore essential writing techniques through structured guides and model texts. Practice with
+        diverse formats: essays, opinion paragraphs, creative prompts, and real-world scenarios. Receive personalized
+        feedback on clarity, coherence, and stylistic effectiveness to polish your compositions. </p>
+      <a href="Information.html" class="btn-1">Information</a>
+    </div>
+  </section>
+
+  <main class="Servicios">
+    <div class="services-content container">
+      <h2>Exercise</h2>
+      <p>
+        Each exercise comes with detailed corrections and explanations to help you learn from your mistakes.
+        Start improving your English today!
+      </p>
+      <a href="Information.html" class="btn-1">Information</a>
+    </div>
+  </main>
+
+  <!-- Ejercicio de Writing: Order the Paragraphs -->
+  <div class="order-container">
+    <h2>Writing Exercise: Order the Paragraphs</h2>
+    <p class="instruction">
+      Order the following paragraphs so that the text makes sense. Write the corresponding letter for each paragraph in
+      the correct order (for example: H, D, G, A, B, E, F, C).
+    </p>
+    <div class="paragraphs">
+      <div class="paragraph"><strong>H:</strong> Dear (Mr/Ms) Green</div>
+      <div class="paragraph"><strong>D:</strong> I have seen your advertisement in this month's edition of English Today
+        and would like to apply for a grant to improve my English in one of your schools this summer.</div>
+      <div class="paragraph"><strong>G:</strong> My main reason for applying is that I lack funds to both pay for
+        tuition fees and stay in the UK for more than one month. A grant is the only way I can pay for these expenses as
+        I am not allowed to work in the UK as an international student.</div>
+      <div class="paragraph"><strong>A:</strong> This is important as improving my level of spoken English would allow
+        me to apply for a job as a teacher in my country, where teachers are required to have a C1 level.</div>
+      <div class="paragraph"><strong>B:</strong> Regarding the skills I would like to focus on, I am particularly
+        interested in improving my speaking level. Although I practise with series in English, I feel my level would
+        greatly improve if I could learn more about pronunciation in your course and practise after class with native
+        speakers.</div>
+      <div class="paragraph"><strong>E:</strong> For these reasons I consider I am an ideal candidate for the grant, and
+        thus hope you will consider my application favourably.</div>
+      <div class="paragraph"><strong>F:</strong> Thank you for your time and consideration. I look forward to hearing
+        from you soon.</div>
+      <div class="paragraph"><strong>C:</strong> Your sincerely, Elsa Pato</div>
+    </div>
+    <input type="text" id="orderInput" class="order-input" placeholder="Enter the correct order (e.g. B,A,C,D,E,F,H,G)">
+    <br>
+    <button onclick="checkOrder()">Check Answer</button>
+    <div id="result" class="result"></div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content container">
+        <div class="link">
+            <h3>Index</h3>
+            <ul>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="index.html">SBI</a></li>
+                <li><a href="index.html">Main</a></li>
+            </ul>
+        </div>
+        <div class="link">
+            <h3>Exercises</h3>
+            <ul>
+                <li><a href="exercises.html">Exercises</a></li>
+                <li><a href="vocabulary.html">Vocabulary</a></li>
+                <li><a href="grammar.html">Grammar</a></li>
+                <li><a href="listening.html">Listening</a></li>
+                <li><a href="reading.html">Reading</a></li>
+                <li><a href="writing.html">Writing</a></li>
+            </ul>
+        </div>
+        <div class="link">
+            <h3>Information</h3>
+            <ul>
+                <li><a href="Information.html">Information</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Index</a></li>
+            </ul>
+        </div>
+        <div class="link">
+            <h3>Contact</h3>
+            <ul>
+                <li><a href="mailto:sofia.melero@humanitastorrejon.onmicrosoft.com">Email</a></li>
+                <li><a href="contact.html">Phone</a></li>
+                <li><a href="https://www.google.es/maps/place/Humanitas+Bilingual+School+Torrej%C3%B3n/">Address</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+  <script>
+    function checkOrder() {
+      // Obtener y normalizar la respuesta del usuario: eliminar comas, espacios y pasar a mayúsculas.
+      var userInput = document.getElementById("orderInput").value;
+      userInput = userInput.replace(/[\s,]+/g, "").toUpperCase();
+
+      // Secuencia esperada: H, D, G, A, B, E, F, C → "HDGABEFC"
+      var expected = "HDGABEFC";
+
+      var resultHTML = "";
+      if (userInput === expected) {
+        resultHTML = '<p style="color:#008000;">✓ Correct! Your ordering is correct.</p>';
+      } else {
+        resultHTML = '<p style="color:#FF4500;">✗ Incorrect. The expected order is: H, D, G, A, B, E, F, C.</p>';
+      }
+      document.getElementById("result").innerHTML = resultHTML;
+    }
+  </script>
+</body>
+
+</html>

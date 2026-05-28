@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fill in the Gaps - Vocabulary Exercise</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Estilos específicos para el ejercicio de fill in the gaps (Ejercicio 2) */
+    .fill-gap-container {
+      text-align: center;
+      margin: 50px auto;
+      max-width: 800px;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .fill-gap-container h2 {
+      font-size: 45px;
+      margin-bottom: 20px;
+      color: #FFA500;
+      /* Tono anaranjado claro */
+    }
+
+    .fill-gap-sentence {
+      font-size: 20px;
+      margin-bottom: 30px;
+      line-height: 1.5;
+      color: #FFA500;
+    }
+
+    .fill-gap-sentence input {
+      font-size: 20px;
+      padding: 5px;
+      width: 150px;
+      text-align: center;
+      margin: 0 5px;
+      border: 1px solid #FFA500;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      background-color: #FFA500;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+    }
+
+    .result {
+      font-size: 20px;
+      margin-top: 30px;
+      color: #cf8c1e;
+      /* Un tono similar, ajustable si se desea */
+    }
+
+    .result span {
+      font-weight: bold;
+      margin-right: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="menu container">
+      <a href="index.html" class="logo">SBI</a>
+      <input type="checkbox" id="menu" />
+      <label for="menu">
+        <img src="images/menu.png" class="menu-icono" alt="">
+      </label>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Main</a></li>
+          <li><a href="exercises.html">Exercises</a></li>
+          <li><a href="spreadsheets.html">Spreadsheets</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-content container">
+      <h1>Vocabulary Exercise 2: Word Explorer</h1>
+      <p>
+        Welcome to the next step in expanding your English vocabulary! This section will guide you through
+        exercises designed to help you learn new words, understand their meanings, and use them effectively
+        in context with growing confidence.
+      </p>
+
+      <a href="Information.html" class="btn-1">Information</a>
+    </div>
+  </header>
+
+  <section class="coffee">
+    <div class="coffee-content container">
+      <h2>Learn, Practice, and Use New Vocabulary with Confidence</h2>
+      <p class="txt-p">
+        Explore the provided words and their meanings.
+        Complete exercises such as matching, fill-in-the-blanks, and multiple-choice questions.
+        Get instant corrections and examples to help you remember and apply each word correctly.
+      </p>
+
+      <a href="Information.html" class="btn-1">Information</a>
+    </div>
+  </section>
+
+  <main class="Servicios">
+    <div class="services-content container">
+      <h2>Exercise</h2>
+      <p>
+        Each exercise comes with detailed corrections and explanations to help you learn from your mistakes.
+        Start improving your English today!
+      </p>
+      <a href="Information.html" class="btn-1">Information</a>
+    </div>
+    <div class="fill-gap-container">
+      <h2>Fill in the Gaps</h2>
+      <p class="fill-gap-sentence">
+        1. The city council is building more affordable houses.
+        - More affordable houses <input type="text" id="gap1" placeholder="fill gap"> (Passive)
+      </p>
+      <p class="fill-gap-sentence">
+        2. People say that immigration has improved cultural diversity.
+        - Immigration <input type="text" id="gap2" placeholder="fill gap"> (Impersonal passive)
+      </p>
+      <p class="fill-gap-sentence">
+        3. We <input type="text" id="gap3" placeholder="fill gap"> (have) our houses <input type="text" id="gap3_2"
+          placeholder="fill gap">. (install) with solar panels to reduce energy consumption. (Causative)
+      </p>
+      <p class="fill-gap-sentence">
+        4. In some countries, elections <input type="text" id="gap4" placeholder="fill gap"> (monitor) by internal
+        observers. (Passive)
+      </p>
+      <p class="fill-gap-sentence">
+        5. It <input type="text" id="gap5" placeholder="fill gap"> (say) that technology is increasing the gap between
+        generations. (Impersonal)
+      </p>
+      <p class="fill-gap-sentence">
+        6. The government <input type="text" id="gap6" placeholder="fill gap"> (report) to be working on a new policy
+        for climate change. (Impersonal)
+      </p>
+      <p class="fill-gap-sentence">
+        7. He <input type="text" id="gap7" placeholder="fill gap"> (get) his passport <input type="text" id="gap7_2"
+          placeholder="fill gap"> every ten years. (Causative)
+      </p>
+      <p class="fill-gap-sentence">
+        8. Public transport <input type="text" id="gap8" placeholder="fill gap"> (improve) in many cities to reduce
+        pollution. (Passive)
+      </p>
+      <p class="fill-gap-sentence">
+        9. It <input type="text" id="gap9" placeholder="fill gap"> (believe) that urbanization will continue to grow in
+        the next decade. (Impersonal)
+      </p>
+      <p class="fill-gap-sentence">
+        10. We <input type="text" id="gap10" placeholder="fill gap"> (expect) to receive new policies on mental health
+        soon. (Personal)
+      </p>
+      <p class="fill-gap-sentence">
+        11. Many human rights violations <input type="text" id="gap11" placeholder="fill gap"> (document) by
+        international organizations. (Passive)
+      </p>
+      <p class="fill-gap-sentence">
+        12. She <input type="text" id="gap12" placeholder="fill gap"> (have) her house <input type="text" id="gap12_2"
+          placeholder="fill gap"> (clean) by a professional service every week. (Causative)
+      </p>
+      <button onclick="checkGrammar()">Check Answers</button>
+      <div id="result" class="result"></div>
+    </div>
+  </main>
+
+  <!-- Ejercicio 2: Fill in the Gaps -->
+
+
+  <script>
+    function checkGrammar() {
+      // Obtener valores ingresados y convertir a minúsculas
+      var gap1 = document.getElementById("gap1").value.trim().toLowerCase();
+      var gap2 = document.getElementById("gap2").value.trim().toLowerCase();
+      var gap3 = document.getElementById("gap3").value.trim().toLowerCase();
+      var gap3_2 = document.getElementById("gap3_2").value.trim().toLowerCase();
+      var gap4 = document.getElementById("gap4").value.trim().toLowerCase();
+      var gap5 = document.getElementById("gap5").value.trim().toLowerCase();
+      var gap6 = document.getElementById("gap6").value.trim().toLowerCase();
+      var gap7 = document.getElementById("gap7").value.trim().toLowerCase();
+      var gap7_2 = document.getElementById("gap7_2").value.trim().toLowerCase();
+      var gap8 = document.getElementById("gap8").value.trim().toLowerCase();
+      var gap9 = document.getElementById("gap9").value.trim().toLowerCase();
+      var gap10 = document.getElementById("gap10").value.trim().toLowerCase();
+      var gap11 = document.getElementById("gap11").value.trim().toLowerCase();
+      var gap12 = document.getElementById("gap12").value.trim().toLowerCase();
+      var gap12_2 = document.getElementById("gap12_2").value.trim().toLowerCase();
+
+      // Definir las respuestas correctas
+      var correct1 = "is believed";
+      var correct2 = "were renovated";
+      var correct3 = "had";
+      var correct3_2 = "installed";
+      var correct4 = "are monitored";
+      var correct5 = "is said";
+      var correct6 = "is reported";
+      var correct7 = "gets";
+      var correct7_2 = "renewed";
+      var correct8 = "is improved";
+      var correct9 = "is believed";
+      var correct10 = "are expected";
+      var correct11 = "are documented";
+      var correct12 = "has";
+      var correct12_2 = "cleaned";
+
+      var resultHTML = "";
+
+      // Evaluar cada espacio y mostrar resultado
+      resultHTML += (gap1 === correct1) ? '<span>Gap 1: ✓</span>' : '<span>Gap 1: ✗ (Correct: ' + correct1 + ')</span>';
+      resultHTML += (gap2 === correct2) ? '<span>Gap 2: ✓</span>' : '<span>Gap 2: ✗ (Correct: ' + correct2 + ')</span>';
+      resultHTML += (gap3 === correct3) ? '<span>Gap 3: ✓</span>' : '<span>Gap 3: ✗ (Correct: ' + correct3 + ')</span>';
+      resultHTML += (gap3_2 === correct3_2) ? '<span>Gap 4: ✓</span>' : '<span>Gap 4: ✗ (Correct: ' + correct3_2 + ')</span>';
+      resultHTML += (gap4 === correct4) ? '<span>Gap 5: ✓</span>' : '<span>Gap 5: ✗ (Correct: ' + correct4 + ')</span>';
+      resultHTML += (gap5 === correct5) ? '<span>Gap 6: ✓</span>' : '<span>Gap 6: ✗ (Correct: ' + correct5 + ')</span>';
+      resultHTML += (gap6 === correct6) ? '<span>Gap 7: ✓</span>' : '<span>Gap 7: ✗ (Correct: ' + correct6 + ')</span>';
+      resultHTML += (gap7 === correct7) ? '<span>Gap 8: ✓</span>' : '<span>Gap 8: ✗ (Correct: ' + correct7 + ')</span>';
+      resultHTML += (gap7_2 === correct7_2) ? '<span>Gap 9: ✓</span>' : '<span>Gap 9: ✗ (Correct: ' + correct7_2 + ')</span>';
+      resultHTML += (gap8 === correct8) ? '<span>Gap 10: ✓</span>' : '<span>Gap 10: ✗ (Correct: ' + correct8 + ')</span>';
+      resultHTML += (gap9 === correct9) ? '<span>Gap 11: ✓</span>' : '<span>Gap 11: ✗ (Correct: ' + correct9 + ')</span>';
+      resultHTML += (gap10 === correct10) ? '<span>Gap 12: ✓</span>' : '<span>Gap 12: ✗ (Correct: ' + correct10 + ')</span>';
+      resultHTML += (gap11 === correct11) ? '<span>Gap 13: ✓</span>' : '<span>Gap 13: ✗ (Correct: ' + correct11 + ')</span>';
+      resultHTML += (gap12 === correct12) ? '<span>Gap 14: ✓</span>' : '<span>Gap 14: ✗ (Correct: ' + correct12 + ')</span>';
+      resultHTML += (gap12_2 === correct12_2) ? '<span>Gap 15: ✓</span>' : '<span>Gap 15: ✗ (Correct: ' + correct12_2 + ')</span>';
+
+      document.getElementById("result").innerHTML = resultHTML;
+    }
+  </script>
+
+<footer class="footer">
+  <div class="footer-content container">
+      <div class="link">
+          <h3>Index</h3>
+          <ul>
+              <li><a href="index.html">Index</a></li>
+              <li><a href="index.html">SBI</a></li>
+              <li><a href="index.html">Main</a></li>
+          </ul>
+      </div>
+      <div class="link">
+          <h3>Exercises</h3>
+          <ul>
+              <li><a href="exercises.html">Exercises</a></li>
+              <li><a href="vocabulary.html">Vocabulary</a></li>
+              <li><a href="grammar.html">Grammar</a></li>
+              <li><a href="listening.html">Listening</a></li>
+              <li><a href="reading.html">Reading</a></li>
+              <li><a href="writing.html">Writing</a></li>
+          </ul>
+      </div>
+      <div class="link">
+          <h3>Information</h3>
+          <ul>
+              <li><a href="Information.html">Information</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="index.html">Index</a></li>
+          </ul>
+      </div>
+      <div class="link">
+          <h3>Contact</h3>
+          <ul>
+              <li><a href="mailto:sofia.melero@humanitastorrejon.onmicrosoft.com">Email</a></li>
+              <li><a href="contact.html">Phone</a></li>
+              <li><a href="https://www.google.es/maps/place/Humanitas+Bilingual+School+Torrej%C3%B3n/">Address</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</footer>
+</body>
+
+</html>

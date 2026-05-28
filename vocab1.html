@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="menu container">
+      <a href="index.html" class="logo">SBI</a>
+      <input type="checkbox" id="menu" />
+      <label for="menu">
+        <img src="images/menu.png" class="menu-icono" alt="">
+      </label>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Main</a></li>
+          <li><a href="exercises.html">Exercises</a></li>
+          <li><a href="spreadsheets.html">Spreadsheets</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-content container">
+      <h1>Vocabulary Exercise 1: Word Mastery</h1>
+      <p>
+        Welcome to the first step in expanding your English vocabulary! This section will guide you through
+        exercises designed to help you learn new words, understand their meanings, and use them correctly in
+        sentences.
+      </p>
+      <a href="Information.html" class="btn-1">Information</a>
+    </div>
+  </header>
+
+  <section class="coffee">
+    <div class="coffee-content container">
+      <h2>Learn, Understand, and Use New Words with Confidence</h2>
+      <p class="txt-p">
+        Read the given words and their definitions.
+        Complete exercises such as fill-in-the-blanks, matching words with meanings, and multiple-choice
+        questions.
+        Get instant corrections and explanations to reinforce your learning.
+      </p>
+      <a href="Information.html" class="btn-1">Information</a>
+    </div>
+  </section>
+
+  <main class="Servicios">
+    <div class="services-content container">
+      <h2>Vocabulary Exercise - Match the words with their definitions</h2>
+      <p>
+        Each exercise comes with detailed corrections and explanations to help you learn from your mistakes.
+        Start improving your English today!
+      </p>
+      <a href="Information.html" class="btn-1">Information</a>
+    </div>
+
+    <!-- Sección del ejercicio de emparejamiento -->
+    <div class="grupo-cajas" style="display: flex; justify-content: center; gap: 50px; margin: 50px 0;">
+      <!-- Columna de palabras -->
+      <div class="cajas">
+        <h3>Words</h3>
+        <div id="words" class="box" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <!-- A cada palabra se le asigna un data-match para referencia si se prefiere usarlo -->
+          <div class="word" draggable="true" ondragstart="drag(event)" id="word1" data-match="def3">Life Expectancy
+          </div>
+          <div class="word" draggable="true" ondragstart="drag(event)" id="word2" data-match="def1">Population growth</div>
+          <div class="word" draggable="true" ondragstart="drag(event)" id="word3" data-match="def2">Senior Citizens</div>
+          <div class="word" draggable="true" ondragstart="drag(event)" id="word4" data-match="def3">End poverty
+          </div>
+          <div class="word" draggable="true" ondragstart="drag(event)" id="word5" data-match="def1">Aging population</div>
+          <div class="word" draggable="true" ondragstart="drag(event)" id="word6" data-match="def2">Own a property</div>
+          <div class="word" draggable="true" ondragstart="drag(event)" id="word7" data-match="def3">Be homeless
+          </div>
+          <div class="word" draggable="true" ondragstart="drag(event)" id="word8" data-match="def1">A tiny minority</div>
+          <div class="word" draggable="true" ondragstart="drag(event)" id="word9" data-match="def2">Individual privacy</div>
+          <div class="word" draggable="true" ondragstart="drag(event)" id="word10" data-match="def2">Protect identity</div>
+        </div>
+      </div>
+      <!-- Columna de definiciones -->
+      <div class="cajas">
+        <h3>Definitions</h3>
+        <div id="definitions">
+          <!-- Cada caja de definición debe recibir la palabra correspondiente -->
+          <div class="box" id="def1" ondrop="drop(event)" ondragover="allowDrop(event)">Elderly people, usually those who have retired.</div>
+          <div class="box" id="def2" ondrop="drop(event)" ondragover="allowDrop(event)">The increase in number of people in a particular area over time.</div>
+          <div class="box" id="def3" ondrop="drop(event)" ondragover="allowDrop(event)">A person´s right to keep their personal life and informstion protected from others.</div>
+          <div class="box" id="def4" ondrop="drop(event)" ondragover="allowDrop(event)">Eliminating extreme financial hardship and lack of resources. </div>
+          <div class="box" id="def5" ondrop="drop(event)" ondragover="allowDrop(event)">The avarage number of years a
+            person is expected to live based on stadistical data.</div>
+          <div class="box" id="def6" ondrop="drop(event)" ondragover="allowDrop(event)">Lacking a permanent place to live.</div>
+          <div class="box" id="def7" ondrop="drop(event)" ondragover="allowDrop(event)">Safeguarding personal information from theft or misuse.</div>
+          <div class="box" id="def8" ondrop="drop(event)" ondragover="allowDrop(event)">A very small percentage of a population or group.</div>
+          <div class="box" id="def9" ondrop="drop(event)" ondragover="allowDrop(event)">Having legal possession of a house, land, or building.</div>
+          <div class="box" id="def10" ondrop="drop(event)" ondragover="allowDrop(event)">A society where the proportion of elderly people is increasing.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botón para corregir el ejercicio -->
+    <div style="text-align: center; margin-bottom: 50px;">
+      <button onclick="checkAnswers()">Check Answers</button>
+    </div>
+
+    <script>
+      function allowDrop(ev) {
+        ev.preventDefault();
+      }
+      function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+      }
+      function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        // Evita que se anide la palabra en un contenedor ya con resultado
+        if (ev.target.classList.contains('box')) {
+          ev.target.appendChild(document.getElementById(data));
+        }
+      }
+
+      function checkAnswers() {
+        // Mapeo de coincidencias correctas: cada id de definición debe contener la palabra con el id indicado.
+        var correctMatches = {
+          "def5": "word1", 
+          "def2": "word2", 
+          "def1": "word3", 
+          "def4": "word4", 
+          "def10": "word5", 
+          "def9": "word6", 
+          "def6": "word7", 
+          "def8": "word8", 
+          "def3": "word9", 
+          "def7": "word10", 
+        };
+
+        for (var defId in correctMatches) {
+          var defBox = document.getElementById(defId);
+          // Elimina cualquier resultado previo
+          var existingResult = defBox.querySelector(".result");
+          if (existingResult) { existingResult.remove(); }
+
+          // Se espera que cada contenedor de definición tenga exactamente una palabra
+          if (defBox.children.length === 1) {
+            var wordElem = defBox.children[0];
+            // Comprueba si el id de la palabra es el esperado
+            if (wordElem.id === correctMatches[defId]) {
+              var span = document.createElement("span");
+              span.className = "result";
+              span.textContent = " ✓";
+              span.style.color = "green";
+              defBox.appendChild(span);
+            } else {
+              var span = document.createElement("span");
+              span.className = "result";
+              span.textContent = " ✗";
+              span.style.color = "red";
+              defBox.appendChild(span);
+            }
+          } else {
+            // Si no hay ninguna palabra o hay más de una, se marca como incorrecto
+            var span = document.createElement("span");
+            span.className = "result";
+            span.textContent = " ✗";
+            span.style.color = "red";
+            defBox.appendChild(span);
+          }
+        }
+      }
+    </script>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content container">
+        <div class="link">
+            <h3>Index</h3>
+            <ul>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="index.html">SBI</a></li>
+                <li><a href="index.html">Main</a></li>
+            </ul>
+        </div>
+        <div class="link">
+            <h3>Exercises</h3>
+            <ul>
+                <li><a href="exercises.html">Exercises</a></li>
+                <li><a href="vocabulary.html">Vocabulary</a></li>
+                <li><a href="grammar.html">Grammar</a></li>
+                <li><a href="listening.html">Listening</a></li>
+                <li><a href="reading.html">Reading</a></li>
+                <li><a href="writing.html">Writing</a></li>
+            </ul>
+        </div>
+        <div class="link">
+            <h3>Information</h3>
+            <ul>
+                <li><a href="Information.html">Information</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Index</a></li>
+            </ul>
+        </div>
+        <div class="link">
+            <h3>Contact</h3>
+            <ul>
+                <li><a href="mailto:sofia.melero@humanitastorrejon.onmicrosoft.com">Email</a></li>
+                <li><a href="contact.html">Phone</a></li>
+                <li><a href="https://www.google.es/maps/place/Humanitas+Bilingual+School+Torrej%C3%B3n/">Address</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
